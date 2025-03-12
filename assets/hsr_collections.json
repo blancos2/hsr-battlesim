@@ -1,0 +1,206 @@
+[
+    { 
+        "name": "Acheron",
+        "bSPD": 101
+    },
+    { 
+        "name": "Argenti",
+        "bSPD": 103
+    },
+    { 
+        "name": "Arlan",
+        "bSPD": 102
+    },
+    { 
+        "name": "Asta",
+        "bSPD": 106
+    },
+    { 
+        "name": "Aventurine",
+        "bSPD": 106
+    },
+    { 
+        "name": "Bailu",
+        "bSPD": 98
+    },
+    { 
+        "name": "Black Swan",
+        "bSPD": 102
+    },
+    { 
+        "name": "Blade",
+        "bSPD": 97
+    },
+    { 
+        "name": "Boothill",
+        "bSPD": 107
+    },
+    { 
+        "name": "Bronya",
+        "bSPD": 99
+    },
+    { 
+        "name": "Clara",
+        "bSPD": 90
+    },
+    { 
+        "name": "Dan Heng",
+        "bSPD": 110
+    },
+    { 
+        "name": "Dan Heng IL",
+        "bSPD": 102
+    },
+    { 
+        "name": "Dr. Ratio",
+        "bSPD": 103
+    },
+    { 
+        "name": "Firefly",
+        "bSPD": 92
+    },
+    { 
+        "name": "Fu Xuan",
+        "bSPD": 100
+    },
+    { 
+        "name": "Gallagher",
+        "bSPD": 98
+    },
+    { 
+        "name": "Hanya",
+        "bSPD": 110
+    },
+    { 
+        "name": "Herta",
+        "bSPD": 100
+    },
+    { 
+        "name": "Himeko",
+        "bSPD": 96
+    },
+    { 
+        "name": "Hook",
+        "bSPD": 94
+    },
+    { 
+        "name": "Huohuo",
+        "bSPD": 98
+    },
+    { 
+        "name": "Jade",
+        "bSPD": 103
+    },
+    { 
+        "name": "Jing Yuan",
+        "bSPD": 99
+    },
+    { 
+        "name": "Jingliu",
+        "bSPD": 96
+    },
+    { 
+        "name": "Kafka",
+        "bSPD": 100
+    },
+    { 
+        "name": "Luka",
+        "bSPD": 103
+    },
+    { 
+        "name": "Luocha",
+        "bSPD": 101
+    },
+    { 
+        "name": "Lynx",
+        "bSPD": 100
+    },
+    { 
+        "name": "March 7th",
+        "bSPD": 101
+    },
+    { 
+        "name": "Misha",
+        "bSPD": 96
+    },
+    { 
+        "name": "Natasha",
+        "bSPD": 98
+    },
+    { 
+        "name": "Pela",
+        "bSPD": 105
+    },
+    { 
+        "name": "Qingque",
+        "bSPD": 98
+    },
+    { 
+        "name": "Robin",
+        "bSPD": 102
+    },
+    { 
+        "name": "Ruan Mei",
+        "bSPD": 104
+    },
+    { 
+        "name": "Sampo",
+        "bSPD": 102
+    },
+    { 
+        "name": "Seele",
+        "bSPD": 115
+    },
+    { 
+        "name": "Serval",
+        "bSPD": 104
+    },
+    { 
+        "name": "Silver Wolf",
+        "bSPD": 107
+    },
+    { 
+        "name": "Sparkle",
+        "bSPD": 101
+    },
+    { 
+        "name": "Sushang",
+        "bSPD": 107
+    },
+    { 
+        "name": "Tingyun",
+        "bSPD": 112
+    },
+    { 
+        "name": "Topaz & Numby",
+        "bSPD": 110
+    },
+    { 
+        "name": "Trailblazer (Destruction)",
+        "bSPD": 100
+    },
+    { 
+        "name": "Trailblazer (Harmony)",
+        "bSPD": 105
+    },
+    { 
+        "name": "Trailblazer (Preservation)",
+        "bSPD": 95
+    },
+    { 
+        "name": "Welt",
+        "bSPD": 102
+    },
+    { 
+        "name": "Xueyi",
+        "bSPD": 103
+    },
+    { 
+        "name": "Yanqing",
+        "bSPD": 109
+    },
+    { 
+        "name": "Yukong",
+        "bSPD": 107
+    }
+]
