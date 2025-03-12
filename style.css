@@ -12,6 +12,40 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: auto auto;
+    gap: 10px;
+    padding: 10px;
+}
+
+.controls {
+    grid-column: 1;
+    grid-row: 1;
+   
+    padding: 10px;
+}
+
+.character-select-container {
+    grid-column: 1;
+    grid-row: 2;
+   
+    padding: 10px;
+    height: 100%;
+}
+
+.action-order {
+    grid-column: 2;
+    grid-row: 1 / span 2;
+    background-color: #333 ;
+    padding: 10px;
+    border: 3px solid rgb(82,84,85);
+    color: #ffffff;
+}
+
 nav, .nav-links {
     display: flex;
     margin:  0 0 ;
@@ -76,19 +110,113 @@ font-size: large;
  }
  
  .background-image{
-    
     position: absolute;
     top: 0;
     left: 0;
     width: 100%; 
     height: 100vh; 
     z-index: -1; 
-    background: url('assets/hsr_bg.jpg') no-repeat center center; 
+    background: url('/assets/hsr_bg.jpg') no-repeat center center; 
     background-color: rgba(255,255,255,0.2);
     background-blend-mode: lighten;
     background-size: cover; 
    
 
+}
+
+
+/* CHAR SELECT */ 
+
+/* Container for the character selection boxes */
+.character-select-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns of character selection boxes */
+    gap: 20px; /* Space between the boxes */
+    max-width: 1200px;
+    margin: 0 auto; /* Center the container */
+}
+
+/* Individual character select profile box */
+.character-select {
+    background-color: #333;
+    border: 3px solid rgb(82,84,85);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+/* Hover effect on character profile boxes */
+.character-select:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Title of each character section */
+.character-select h2 {
+    font-size: 18px;
+    margin-bottom: 8px;
+    color: #ffffff;
+}
+
+/* Style for select dropdown */
+select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    background-color: rgb(82,84,85);
+    font-size: 16px;
+    color: #ffffff;
+}
+
+/* Style for the input box (Visible SPD input) */
+input[type="number"] {
+    width: 70%;
+    padding: 8px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    background-color: rgb(82,84,85);;
+    font-size: 16px;
+    color: #ffffff;
+}
+
+
+/* To ensure proper spacing and alignment within each box */
+.character-select p {
+    margin-bottom: 15px;
+    
+}
+
+/* New Flexbox container for Base SPD and Visible SPD */
+.character-select .spd-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+/* Style for Base SPD and Visible SPD sections */
+.character-select .spd-container > div {
+    width: 48%; /* Ensure both take up 50% but leave a small gap */
+}
+
+/* The displayed Base SPD for each character */
+p#chr1-bSPD, p#chr2-bSPD, p#chr3-bSPD, p#chr4-bSPD {
+    font-weight: bold;
+    color: #4CAF50; /* Green for Base SPD value */
+}
+
+/* Style for the select dropdown's "Select a character" option */
+select option {
+    color: #555;
+    padding: 8px;
+}
+
+/* Optional: Add a small margin between character select boxes */
+.character-select-container .character-select {
+    margin-bottom: 10px;
 }
 
 /* BUTTONS */ 

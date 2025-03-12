@@ -5,9 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HSR Battle Sim</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="mediaqueries.css">
+    
+
 </head>
 <body>
+    
     <div id="wrapper">
         <nav id="desktop-nav">
             <div class = "logo">Honkai: Star Rail Battle Sim</div>
@@ -27,31 +29,107 @@
         </nav>
         <!--BACKGROUND IMAGE-->
         <div class="background-image"> </div>
-        <div class="controls">
-            <table>
-                <tr> 
-                    <th rowspan="2">Settings</th>
-                    <th> Cycle</th>
-                    <th> Total AV</th>
-                    <th> Enemy? </th>
-                    <th> Enemy SPD</th>
+        <div class="container">
+
+            <div class="controls">
+                <table>
+                    <tr> 
+                        <th rowspan="2">Settings</th>
+                        <th> Cycle</th>
+                        <th> Total AV</th>
+                        <th> Enemy? </th>
+                        <th> Enemy SPD</th>
+                        
+                    </tr>
+                    <tr>
+                        <td><input type="number" id="cycleInput" placeholder="Enter cycle value"></td>
+                        <td><input type="number" id="totalAVInput" placeholder="Enter total AV"></td>
+                        <td><input type="checkbox" id="enemyCheckbox"></td>
+                        <td><input type="number" id="enemySPDInput" placeholder="Enter enemy SPD"></td>
+                    </tr>
                     
-                </tr>
-                <tr>
-                    <td> 1</td>
-                    <td> 150</td>
-                    <td> []</td>
-                    <td> 300</td>
-                </tr>
+                </table>
+                <button class = "btn btn-color-2" onclick="getInputValues()">Submit</button>
+    
+            </div>
+            
+            <div class="character-select-container">
+                <div class="character-select profile-1">
+                    <h2>Name:</h2>
+                    <select id="chr1-select" onchange="updateCharacterSPD(1)">
+                        <option value="">Select a character</option>
+                    </select>
+            
+                    <h2>Base SPD:</h2>
+                    <p id="chr1-bSPD"> - </p>
+            
+                    <h2>Visible SPD:</h2>
+                    <p> 
+                        <input type="number" id="chr1_vSPDInput" placeholder="Enter pre-combat SPD">
+                    </p>
+                </div>
+            
+                <div class="character-select profile-2">
+                    <h2>Name:</h2>
+                    <select id="chr2-select" onchange="updateCharacterSPD(2)">
+                        <option value="">Select a character</option>
+                    </select>
+            
+                    <h2>Base SPD:</h2>
+                    <p id="chr2-bSPD"> - </p>
+            
+                    <h2>Visible SPD:</h2>
+                    <p> 
+                        <input type="number" id="chr2_vSPDInput" placeholder="Enter pre-combat SPD">
+                    </p>
+                </div>
+            
+                <div class="character-select profile-3">
+                    <h2>Name:</h2>
+                    <select id="chr3-select" onchange="updateCharacterSPD(3)">
+                        <option value="">Select a character</option>
+                    </select>
+            
+                    <h2>Base SPD:</h2>
+                    <p id="chr3-bSPD"> - </p>
+            
+                    <h2>Visible SPD:</h2>
+                    <p> 
+                        <input type="number" id="chr3_vSPDInput" placeholder="Enter pre-combat SPD">
+                    </p>
+                </div>
+            
+                <div class="character-select profile-4">
+                    <h2>Name:</h2>
+                    <select id="chr4-select" onchange="updateCharacterSPD(4)">
+                        <option value="">Select a character</option>
+                    </select>
+            
+                    <h2>Base SPD:</h2>
+                    <p id="chr4-bSPD"> - </p>
+            
+                    <h2>Visible SPD:</h2>
+                    <p> 
+                        <input type="number" id="chr4_vSPDInput" placeholder="Enter pre-combat SPD">
+                    </p>
+                </div>
                 
-            </table>
-
+            </div>
+            <div class="action-order">
+                <button onclick="getTurnOrder()">Calculate Turn Order</button>
+            
+                <p><span id="chr1-name"> - </span> moves at <span id="chr1-AV"> - </span> AV</p>
+                <p><span id="chr2-name"> - </span> moves at <span id="chr2-AV"> - </span> AV</p>
+                <p><span id="chr3-name"> - </span> moves at <span id="chr3-AV"> - </span> AV</p>
+                <p><span id="chr4-name"> - </span> moves at <span id="chr4-AV"> - </span> AV</p>
+                <p><span id="enemy-select"> - </span> moves at <span id="enemy-AV"> - </span> AV</p>
+            
+                <h3>Turn Order Log:</h3>
+                <div id="action-order-list"></div>
+            </div>
+            
         </div>
-
-        <div class="character-select">
-
-        </div>
-        
         
     </div>
+    <script src="javascript.js"></script>
 </body>
