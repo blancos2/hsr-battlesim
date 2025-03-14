@@ -84,11 +84,11 @@ let totalCycles = 0; // Track total cycles
 
 function getTurnOrder() {
      // Get the values from the inputs
-     let cycleValue = document.getElementById("cycleInput").value;
+     document.getElementById("cycleInput").textContent = totalAVValue <= 150 ? Math.floor(totalAVValue / 150) : 1 + Math.floor((totalAVValue - 150) / 100);
      let totalAVValue = document.getElementById("totalAVInput").value;
      let enemyChecked = document.getElementById("enemyCheckbox").checked;
      let enemySPDValue = document.getElementById("enemySPDInput").value;
-    cycleValue.textContent = (totalAVValue <= 150 ? Math.floor(totalAVValue / 150) : 1 + Math.floor((totalAVValue - 150) / 100));
+     //cycle.textContent = ;
 
   //  let cycle = totalAVValue <= 150 ? Math.floor(totalAVValue / 150) : 1 + Math.floor((totalAVValue - 150) / 100);
         
