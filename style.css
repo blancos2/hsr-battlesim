@@ -115,7 +115,7 @@ nav, .nav-links {
     width: 100%; 
     height: 100vh; 
     z-index: -1; 
-    background: url('assets/hsr_bg.jpg') no-repeat center center; 
+    background: url('./assets/hsr_bg.jpg') no-repeat center center; 
     background-color: rgba(255,255,255,0.2);
     background-blend-mode: lighten;
     background-size: cover; 
