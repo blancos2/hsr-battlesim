@@ -13,7 +13,6 @@ body {
 }
 
 
-
 .container {
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -83,7 +82,7 @@ nav, .nav-links {
     text-underline-offset: 1rem;
     text-decoration-color: rgb(181, 181, 181);
     transition: all 300ms ease;
-font-size: large;
+     font-size: large;
     
  }
  
@@ -124,6 +123,18 @@ font-size: large;
 
 }
 
+#chr1-table {
+    width: 70%; /* Takes up 70% of the screen */
+    border-collapse: collapse;
+    text-align: center;
+}
+
+#top-menu {
+    display: flex;
+    align-items: center; /* Align items vertically */
+    gap: 20px; /* Space between button and table */
+    width: 100%;
+}
 
 /* CHAR SELECT */ 
 
@@ -296,5 +307,48 @@ th, td {
     background-color: rgb(51,52,54);
 }
 
+.TABLE-CONTENTS {
+    visibility:hidden;
+}
+/* Turn Log Container */
+#turn-log {
+    width: 90%;
+    
+    max-height: 650px; /* Prevents excessive height */
+    overflow-y: auto; /* Enables scrolling */
+    background-color: rgb(51,52,54); 
+    border: 2px solid #333; /* Dark border for contrast */
+    border-radius: 8px; /* Smooth edges */
+    padding: 10px;
+    font-family: 'Arial', sans-serif;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* Individual Turn Entry */
+#turn-log p {
+    background: rgb(92, 92, 94); /* White background */
+    padding: 8px 12px;
+    margin: 5px 0;
+    border-left: 4px solid #007bff; /* Blue left border for emphasis */
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+/* Hover Effect for Entries */
+#turn-log p:hover {
+    transform: scale(1.02);
+    background: #e8f0fe; /* Slight blue tint on hover */
+}
+
+/* Styling for Different Participants */
+#turn-log p:nth-child(even) {
+    border-left-color: #28a745; /* Green for alternating rows */
+}
+
+#turn-log p:nth-child(odd) {
+    border-left-color: #dc3545; /* Red for alternating rows */
+}
 
 
