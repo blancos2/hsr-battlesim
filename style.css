@@ -149,7 +149,7 @@ nav, .nav-links {
 
 /* Individual character select profile box */
 .character-select {
-    background-color: #D3D3D3;
+    background-color: #333;
     border: 3px solid rgb(82,84,85);
     padding: 20px;
     border-radius: 8px;
@@ -221,7 +221,7 @@ p#chr1-bSPD, p#chr2-bSPD, p#chr3-bSPD, p#chr4-bSPD {
 
 /* Style for the select dropdown's "Select a character" option */
 select option {
-    color: #555;
+    color: #FFFFFF;
     padding: 8px;
 }
 
